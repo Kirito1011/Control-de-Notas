@@ -1,3 +1,10 @@
+CREATE DATABASE universidad;
+USE universidad;
+
+DROP TABLE IF EXISTS notas_estudiantes_materias;
+DROP TABLE IF EXISTS materias;
+DROP TABLE IF EXISTS estudiantes;
+
 CREATE TABLE estudiantes(
     id bigint unsigned not null primary key auto_increment,
     nombre varchar(255) not null,
